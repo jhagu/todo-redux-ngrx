@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "ng:gc": "ng g c",
+    "ng:gp": "ng g p",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
@@ -19,7 +21,10 @@
     "@angular/platform-browser": "~8.2.14",
     "@angular/platform-browser-dynamic": "~8.2.14",
     "@angular/router": "~8.2.14",
+    "@ngrx/store": "^8.5.1",
+    "@ngrx/store-devtools": "^8.5.1",
     "rxjs": "~6.4.0",
+    "todomvc-app-css": "^2.3.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
   },
