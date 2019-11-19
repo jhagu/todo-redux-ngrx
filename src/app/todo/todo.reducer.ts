@@ -9,7 +9,7 @@ const todo3 = new Todo('Travel');
 todo2.completed = true;
 const initialState: Todo[] = [todo1, todo2, todo3];
 
-export const todoReducer = (state = initialState, action: TodoActions.Actions): Todo[] => {
+export function todoReducer(state = initialState, action: TodoActions.Actions): Todo[]{
   switch (action.type) {
     case TodoActions.ADD_TODO:
       const todo = new Todo(action.text);
