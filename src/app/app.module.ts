@@ -9,7 +9,6 @@ import { appReducers } from './app.reducers';
 // Reactive Forms
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { TodoComponent } from './todo/todo.component';
@@ -34,7 +33,6 @@ import { FilterPipe } from './filter/filter.pipe';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     ReactiveFormsModule,
     StoreModule.forRoot(appReducers),
     StoreDevtoolsModule.instrument({maxAge: 25, logOnly: environment.production})
